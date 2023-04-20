@@ -1,8 +1,17 @@
-@(url: String)
+@(url: String, params: Map[String, Seq[String]])
+
+@username = @{ params.get("username") }
+@error = @{ params.get("error") }
+
 <form action="@url?client_name=FormClient" method="POST">
-	<input type="text" name="username" value="" />
+	<input type="text" name="username" value="@username" />
 	<p />
 	<input type="password" name="password" value="" />
 	<p />
 	<input type="submit" name="submit" value="Submit" />
 </form>
+
+<br />
+@if(error.nonEmpty) {
+error: @params.get("error")
+}

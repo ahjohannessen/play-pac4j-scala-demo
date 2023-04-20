@@ -18,3 +18,7 @@ dist
 *.lock
 /bin/
 .bsp
+.metals
+.vscode
+.bloop
+*metals.sbt

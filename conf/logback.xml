@@ -8,10 +8,10 @@
     </encoder>
   </appender>
 
-  <logger name="org.pac4j.core.engine" level="DEBUG" />
-  <logger name="org.pac4j.core.adapter" level="DEBUG" />
+  <logger name="org.pac4j.core.engine" level="INFO" />
+  <logger name="org.pac4j.core.adapter" level="INFO" />
 
-  <root level="WARN">
+  <root level="INFO">
     <appender-ref ref="STDOUT" />
   </root>
 
